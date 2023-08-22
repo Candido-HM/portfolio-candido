@@ -1,0 +1,148 @@
+// Estilos generales de la pagina
+
+// Importar fuente OpenSans
+@font-face 
+    font-family: "OpenSans-R"
+    src: url('/assets/fonts/OpenSans-Regular.ttf')
+
+@font-face 
+    font-family: "OpenSans-SB"
+    src: url('/assets/fonts/OpenSans-SemiBold.ttf')
+
+@font-face 
+    font-family: "OpenSans-B"
+    src: url('/assets/fonts/OpenSans-Bold.ttf')
+
+
+//Variables 
+$information-bg: url('/assets/img/information-bg.webp')
+$img-user: url('/assets/img/img-user.webp')
+
+*
+    margin: 0px
+    padding: 0px
+
+header
+    width: 100%
+    height: 400px
+
+    .introduction
+        width: 100%
+        height: 80%
+
+        .images
+            width: 100%
+            height: 75%
+            display: flex
+            align-items: center
+            flex-direction: column
+
+            .bg-information
+                width: 100%
+                height: 70%
+                z-index: 1
+                margin-bottom: -85px
+                background: $information-bg
+                background-size: 100% 150%
+        
+            .img-user
+                width: 150px
+                height: 150px
+                z-index: 2
+                background: $img-user
+                background-size: 100% 100%
+                border-radius: 100%
+        
+        .info-user
+            width: 100%
+            height: 25%
+            display: flex
+            flex-direction: row
+
+            .text-user
+                width: 85%
+                padding: 3px
+
+                h1
+                    font-family: 'OpenSans-B', Arial, sans-serif
+                    font-size: 20px
+                    text-align: center
+                .occupation
+                    font-family: 'OpenSans-SB'
+                    font-size: 18px
+                    text-align: center
+            
+            .theme
+                width: 15%
+                padding: 3px
+                .btn-theme
+                    border: none
+                    width: 40px
+                    height: 50px
+                    cursor: pointer
+    
+    .stack
+        width: 100%
+        height: 10%
+        display: flex
+        align-items: center
+        justify-content: center
+
+        img
+            margin: 3px
+            width: 30px
+            height: 30px
+    
+    .navbar
+        width: 100%
+        height: 10%
+
+        ul
+            width: inherit
+            height: 100%
+            display: flex
+            margin: 0px auto
+
+            li
+                width: 25%
+                height: inherit
+                display: inline-flex
+                justify-content: center
+                align-items: center
+
+                a
+                    width: 100%
+                    text-align: center
+
+                    img
+                        width: 30px
+                        height: 30px
+
+                    span
+                        display: none
+            
+            .active
+                    border-radius: 2px
+                    border-bottom: 1px solid #2577FF
+                    box-shadow: 0px -3px 0px 0px #2577FF inset
+
+                    img
+                        filter: invert(0.4) sepia(1) hue-rotate(190deg) saturate(1000%) !important
+    // Fijar el menu en la parte superior
+    .fixed-menu
+        position: fixed !important
+        top: 0 !important
+        right: 0
+        left: 0 !important
+        width: 100% !important
+        z-index: 999 !important
+        border-radius: 0px 0px 20px 20px !important
+        overflow: hidden !important
+        max-width: 1440px !important
+        margin: 0px auto
+        height: 70px
+         
+main
+    width: 100%
+    height: 1900px
+    margin-top: 30px

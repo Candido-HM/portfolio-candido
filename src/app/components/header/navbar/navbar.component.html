@@ -1,0 +1,28 @@
+<nav class="navbar" [class.fixed-menu]="isFixedMenu">
+    <ul>
+        <li [routerLinkActive]="['active']">
+            <a [routerLink]="['home']">
+                <img src="/assets/img/house-nav.svg" alt="home">
+                <span>Inicio</span>
+            </a>
+        </li>
+        <li [routerLinkActive]="['active']">
+            <a [routerLink]="['formacion']">
+                <img src="/assets/img/graduation-nav.svg" alt="formation">
+                <span>Formación</span>
+            </a>
+        </li>
+        <li [routerLinkActive]="['active']">
+            <a [routerLink]="['experiencia']">
+                <img src="/assets/img/business-nav.svg" alt="jobs">
+                <span>Experiencia</span>
+            </a>
+        </li>
+        <li [routerLinkActive]="['active']">
+            <a [routerLink]="['contacto']">
+                <img src="/assets/img/address-nav.svg" alt="phone">
+                <span>Contacto</span>
+            </a>
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,97 @@
+/* Mobile first */
+
+@media screen and (min-width: 640px) 
+    header
+        .introduction
+            display: flex
+            flex-direction: column
+            align-items: center
+
+            .images
+                width: 90%
+                height: 88%
+                align-items: flex-start
+                .bg-information
+                    border-radius: 0px 0px 20px 20px
+                    background-size: 100% 100%
+                .img-user
+                    margin-left: 30px
+            
+            .info-user
+                width: 90%
+                margin-top: -60px
+                z-index: 3
+                justify-content: flex-end
+
+                .text-user
+                    width: 60%
+                    h1
+                        text-align: left
+                    .occupation
+                        text-align: left
+                .theme
+                    width: 8%
+                    display: flex
+                    justify-content: flex-end
+        .navbar
+            ul
+                li
+                    a
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        text-decoration: none
+                        span
+                            display: block
+                            font-family: 'OpenSans-SB'
+                            margin-left: 10px
+                            font-size: 18px
+                .active
+                    span
+                        color: #2577FF !important
+//Falta definir mas estilos para las siguientes secciones
+
+@media screen and (min-width: 900px) 
+    header
+        .introduction
+            .images
+                width: 80%
+                height: 100%
+                .bg-information
+                    height: 80%
+                    margin-bottom: -100px
+                    background-size: 103% 115%
+                .img-user
+                    width: 140px
+                    height: 140px
+                    margin-left: 50px
+
+            .info-user
+                width: 80%
+                margin-top: -50px
+        
+        .navbar
+            ul
+                width: 80%
+
+//Falta definir mas estilos para las siguientes secciones
+
+// @media screen and (min-width: 1280px)
+//     main
+//         background: red !important
+
+@media screen and (min-width: 1440px)
+    body 
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        header
+            width: 1440px
+        main
+            width: 1440px
+            border-radius: 20px
+            // background: green !important
+        footer
+            width: 1440px
+/*Limite de expacion de la pagina 1440px. Top limite*/

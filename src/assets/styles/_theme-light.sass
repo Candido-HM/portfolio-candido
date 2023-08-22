@@ -1,0 +1,38 @@
+//Mode Light
+
+body.light
+    background-color: white
+    color: #202020
+
+    header
+        .introduction
+            background: linear-gradient(180deg, #266cdd 0%, #fff 100%) 
+
+            .images
+                .img-user
+                    border: 3px solid white
+                
+            .info-user
+                .theme
+                    .btn-theme
+                        background: no-repeat 50% 50%/ 30px url('/assets/img/sun-solid.svg') //hoja de estilo light
+                        filter: invert(.3)
+            
+        .stack
+            img
+                filter: invert(.3)
+            
+        .navbar       
+            background: #F5F5F5 //hoja de estilo light
+            border-top: 1px solid gray //hoja de estilo light
+            border-bottom: 1px solid gray //hoja de estilo light  
+            ul     
+                li
+                    a
+                        img
+                            filter: invert(.1) 
+                        span
+                            color: #202020 
+                
+    main
+        background-color: #F0F2F9
