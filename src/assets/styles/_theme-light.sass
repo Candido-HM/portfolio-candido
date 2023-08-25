@@ -1,5 +1,11 @@
 //Mode Light
 
+// Mixin
+@mixin section-light()
+    background-color: #FFFFFF
+    border: 1px solid #ccc
+
+
 body.light
     background-color: white
     color: #202020
@@ -36,3 +42,9 @@ body.light
                 
     main
         background-color: #F0F2F9
+        /***********************************Componente Home *************************************/
+        .presentation
+            .avatar-container
+                @include section-light()
+        .text-presentation
+            @include section-light()

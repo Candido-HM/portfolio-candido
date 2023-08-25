@@ -1,4 +1,11 @@
 //Mode Dark
+
+// Mixin
+@mixin section-dark()
+    background-color: #242526
+    border: 1px solid #18191A
+
+
 body.dark
     background-color: #202124
     color: white
@@ -35,3 +42,9 @@ body.dark
            
     main
         background-color: #18191A
+        /***********************************Componente Home *************************************/
+        .presentation
+            .avatar-container
+                @include section-dark()
+        .text-presentation
+            @include section-dark()

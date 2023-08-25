@@ -23,7 +23,12 @@ $img-user: url('/assets/img/img-user.webp')
     text-align: center
     font-family: "OpenSans-B", Arial, sans-serif
     font-size: 25px
- 
+
+@mixin style-borde()
+    border-radius: 20px 20px 0px 0px
+    border-top: 1px solid #188FF5 !important
+    box-shadow: 0px -1px 1px 0px #A2FBF9,0px 1px 0px 0px #89CFD1 inset
+    
 
 *
     margin: 0px
@@ -75,7 +80,7 @@ header
                     font-size: 20px
                     text-align: center
                 .occupation
-                    font-family: 'OpenSans-SB'
+                    font-family: 'OpenSans-SB', Arial, sans-serif
                     font-size: 18px
                     text-align: center
             
@@ -165,21 +170,33 @@ main
             @include title-section()
     .presentation
         width: inherit
-        height: 350px
+        height: 400px
         margin-top: 50px
+        margin-bottom: 50px
         display: flex
         flex-direction: column
         align-items: center
-        background: green
-        .avatar
+        .avatar-container
             width: 90%
             height: 250px
-            background: red
+            display: flex
+            align-items: center
+            justify-content: center
+            @include style-borde()
             img
-                width: 50%
-                height: 50px
-                background: violet
-        section
+                width: 270px
+                height: 270px
+        .text-presentation
             width: 90%
-            height: 100px
-            background: gray
+            height: 150px
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 0px 0px 20px 20px
+            p
+                text-align: center
+                padding: 10px
+                font-family: "OpenSans-R"
+                font-size: 15px 
+    
+    // .title-skills
