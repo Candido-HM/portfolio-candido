@@ -28,6 +28,11 @@ $img-user: url('/assets/img/img-user.webp')
     border-radius: 20px 20px 0px 0px
     border-top: 1px solid #188FF5 !important
     box-shadow: 0px -1px 1px 0px #A2FBF9,0px 1px 0px 0px #89CFD1 inset
+
+@mixin centrar-col()
+    display: flex
+    flex-direction: column
+    align-items: center
     
 
 *
@@ -156,7 +161,7 @@ header
          
 main
     width: 100%
-    height: 1900px //Editar auto
+    // height: 1900px //Editar auto
     margin-top: 30px
     padding-top: 35px
     display: flex
@@ -173,9 +178,7 @@ main
         height: 400px
         margin-top: 50px
         margin-bottom: 50px
-        display: flex
-        flex-direction: column
-        align-items: center
+        @include centrar-col()
         .avatar-container
             width: 90%
             height: 250px
@@ -196,7 +199,45 @@ main
             p
                 text-align: center
                 padding: 10px
-                font-family: "OpenSans-R"
+                font-family: "OpenSans-SB"
                 font-size: 15px 
     
-    // .title-skills
+    .title-skills
+        margin-bottom: 50px
+        h2
+            @include title-section()
+    .skills-article
+        height: auto
+        margin-top: 50px
+        @include centrar-col()
+        .skills-container
+            width: 90%
+            height: auto
+            margin-bottom: 50px
+            @include style-borde()
+            border-radius:20px 20px
+
+            .html
+                // background: #c14b01
+                align-self: flex-start
+            .css
+                // background: blue
+                align-self: flex-start
+            .js
+                // background: yellow
+                align-self: start
+            .git
+                // background: #f67e23
+                align-self: center
+            .netlify
+                // background: #00b7ff
+            .mysql
+                // background: green
+            .sql
+                // background: violet
+            .angular
+                // background: #b80303
+            .github
+                // background: #514e4e
+            .sass
+                // background: #d709d7
