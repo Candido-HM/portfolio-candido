@@ -43,6 +43,7 @@ $img-user: url('/assets/img/img-user.webp')
 *
     margin: 0px
     padding: 0px
+    font-display: swap
 
 header
     width: 100%
@@ -296,6 +297,24 @@ main
                     font-family: "OpenSans-R", Arial, sans-serif
                     font-size: 17px
                     padding: 10px
+    .udemy-formation
+        @include centrar-col()
+        width: auto
+        height: auto
+        margin-bottom: 50px
+        .udemy-container
+            width: 90%
+            height: 500px
+            @include style-borde()
+            border-end-start-radius: 20px
+            border-end-end-radius: 20px
+            .logo-udemy
+                width: 100%
+                height: 200px
+                @include centrar()
+                img
+                    width: 250px
+
 
     /***********************************Componente Experiencia *************************************/
     .title-experiencia
