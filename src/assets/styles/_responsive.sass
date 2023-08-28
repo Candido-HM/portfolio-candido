@@ -57,11 +57,28 @@
             justify-content: center
             .avatar-container
                 width: 45%
+                height: 85%
+                border-radius: 20px 0px 0px 20px
+                img
+                    width: 300px
+                    height: 300px
             .text-presentation
                 width: 45%
-                height: 256px
+                height: 85%
+                border-radius: 0px 20px 20px 0px
+                p
+                    font-size: 18px
+                    padding: 15px
         .skills-article
             .skills-container
+                grid-template-rows: repeat(4, 100px)
+                grid-template-areas: "html css sass" "github netlify mysql" "sql angular git" "javascript"
+                .html
+                    grid-area: html
+                .css
+                    grid-area: css
+                .sass
+                    grid-area: sass
 
 //Falta definir mas estilos para las siguientes secciones
 
@@ -93,8 +110,14 @@
         .presentation
             .avatar-container
                 width: 40%
+                img
+                    width: 350px
+                    height: 350px
             .text-presentation
                 width: 40%
+                p
+                    font-size: 20px
+                    padding: 20px
         .skills-article
             .skills-container
                 width: 80%
