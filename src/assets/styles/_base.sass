@@ -192,7 +192,7 @@ main
                 height: 270px
         .text-presentation
             width: 90%
-            height: 150px
+            height: 180px
             @include centrar()
             border-radius: 0px 0px 20px 20px
             p
@@ -271,7 +271,7 @@ main
         margin-bottom: 50px
         .itsz-container
             width: 90%
-            height: 450px
+            height: 500px
             @include style-borde()
             border-end-start-radius: 20px
             border-end-end-radius: 20px
@@ -282,21 +282,26 @@ main
                 img
                     width: 187px
                     height: 200px
-            .title-itsz
-                width: 100%
-                height: 60px
-                h3
-                    @include title-section()
-                    padding-left: 10px
-                    padding-right: 10px
-                    font-size: 20px 
-            .description-itsz
-                width: 100%
-                height: 150px
-                p
-                    font-family: "OpenSans-R", Arial, sans-serif
-                    font-size: 17px
-                    padding: 10px
+            .itsz-about
+                @include centrar-col()
+                .title-itsz
+                    width: 100%
+                    height: 60px
+                    h3
+                        @include title-section()
+                        padding-left: 10px
+                        padding-right: 10px
+                        font-size: 20px 
+                hr
+                    margin: 10px
+                    width: 95%
+                .description-itsz
+                    width: 100%
+                    @include centrar()
+                    p
+                        font-family: "OpenSans-SB", Arial, sans-serif
+                        font-size: 17px
+                        padding: 10px
     .udemy-formation
         @include centrar-col()
         width: auto
@@ -329,7 +334,7 @@ main
                 hr
                     margin: 10px
                 p
-                    font-family: "OpenSans-R", Arial, sans-serif
+                    font-family: "OpenSans-SB", Arial, sans-serif
                     font-size: 17px
                     padding: 10px
 
