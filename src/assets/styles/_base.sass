@@ -319,24 +319,27 @@ main
                 @include centrar()
                 img
                     width: 250px
-            .title-udemy
-                width: 100%
-                height: 50px
-                h3
-                    @include title-section()
-                    padding-left: 10px
-                    padding-right: 10px
-                    font-size: 20px 
-            .description-udemy
-                width: 100%
-                height: auto
-                margin-bottom: 30px
-                hr
-                    margin: 10px
-                p
-                    font-family: "OpenSans-SB", Arial, sans-serif
-                    font-size: 17px
-                    padding: 10px
+            .udemy-about
+                @include centrar-col()
+                .title-udemy
+                    width: 100%
+                    height: 50px
+                    h3
+                        @include title-section()
+                        padding-left: 10px
+                        padding-right: 10px
+                        font-size: 20px 
+                .description-udemy
+                    width: 100%
+                    height: auto
+                    margin-bottom: 30px
+                    hr
+                        margin: 10px
+                        width: 95%
+                    p
+                        font-family: "OpenSans-SB", Arial, sans-serif
+                        font-size: 17px
+                        padding: 10px
 
 
     /***********************************Componente Experiencia *************************************/
