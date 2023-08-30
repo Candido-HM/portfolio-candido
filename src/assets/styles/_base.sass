@@ -174,8 +174,13 @@ main
     .title-welcome
         width: 100%
         height: auto
+        @include centrar-col
+        margin-top: 10px
         h2
             @include title-section()
+        span
+            text-align: center
+            font-family: 'OpenSans-SB', Arial, sans-serif
     .presentation
         width: inherit
         height: 400px
