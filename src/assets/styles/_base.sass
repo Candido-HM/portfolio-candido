@@ -217,46 +217,42 @@ main
         .skills-container
             width: 90%
             height: auto
+            padding-top: 20px
+            padding-bottom: 20px
             margin-bottom: 50px
             @include style-borde()
             border-radius:20px 20px
-            display: grid
-            grid-template-rows: repeat(5, 100px)
-            grid-template-areas: "html css" "sass github" "netlify mysql" "sql angular" "git javascript"
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            .item
+                width: calc( 50% - 20px )
+                height: 100px
+                padding: 10px
 
             .html
-                grid-area: html
                 @include centrar()
             .css
-                grid-area: css
                 @include centrar()
             .sass
-                grid-area: sass
                 @include centrar()
             .github
-                grid-area: github
                 @include centrar()
             .netlify
-                grid-area: netlify
                 @include centrar()
             .mysql
-                grid-area: mysql
                 @include centrar()
             .sql
-                grid-area: sql
                 @include centrar()
             .angular
-                grid-area: angular
                 @include centrar()
             .git
-                grid-area: git
                 @include centrar()
             .javascript
-                grid-area: javascript
                 @include centrar()
-            figure
-                img 
-                    width: 80px
+            // figure
+            //     img 
+            //         width: 100px
 
     /***********************************Componente Formation *************************************/
     .title-formation
