@@ -43,7 +43,6 @@ $img-user: url('/assets/img/img-user.webp')
 *
     margin: 0px
     padding: 0px
-    font-display: swap
 
 header
     width: 100%
@@ -234,8 +233,13 @@ main
             justify-content: center
             .item
                 width: calc( 50% - 20px )
-                height: 100px
+                height: auto
                 padding: 10px
+                @include centrar-col()
+                p
+                    font-family: "OpenSans-SB", Arial, sans-serif
+                    font-size: 18px
+                    margin: 10px
 
             .html
                 @include centrar()
