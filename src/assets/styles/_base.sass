@@ -406,10 +406,18 @@ main
             justify-content: center
             .proyecto
                 width: 100%
-                height: 350px
+                height: 400px
                 margin-bottom: 20px 
                 @include style-borde
-                @include centrar
+                @include centrar-col
+                .img-project
+                    width: 100%
+                    height: 40%
+                    @include centrar-col
+                    // background: green
+                    img
+                        width: 260px
+                        height: 150px
 
     /***********************************Componente Contacto *************************************/
     .title-contact
