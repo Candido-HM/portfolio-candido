@@ -26,7 +26,6 @@ export class ExperienceComponent implements OnInit {
   getProjects(){
     this._projectService.getProjects().subscribe(
       response => {
-        console.log(response);
         if(response){
           this.projects = response;
         }
