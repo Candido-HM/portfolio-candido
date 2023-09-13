@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectService } from 'src/app/services/project.service';
+import { Project } from 'src/app/models/project';
 import { Global } from 'src/app/services/global';
 
 @Component({
@@ -10,7 +11,7 @@ import { Global } from 'src/app/services/global';
 })
 export class ExperienceComponent implements OnInit {
 
-  public projects = [];
+  public projects: Project [];
   public url: string;
 
   constructor(private _projectService: ProjectService){
