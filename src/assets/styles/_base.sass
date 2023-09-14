@@ -4,14 +4,17 @@
 @font-face 
     font-family: "OpenSans-R"
     src: url('/assets/fonts/OpenSans-Regular.ttf')
+    font-display: swap
 
 @font-face 
     font-family: "OpenSans-SB"
     src: url('/assets/fonts/OpenSans-SemiBold.ttf')
+    font-display: swap
 
 @font-face 
     font-family: "OpenSans-B"
     src: url('/assets/fonts/OpenSans-Bold.ttf')
+    font-display: swap
 
 
 //Variables 
@@ -430,3 +433,16 @@ main
     .title-contact
         h2
             @include title-section()
+
+/*********************************** FOOTER *************************************/
+footer
+    height: auto
+    @include centrar-col()
+    .info-footer
+        width: 90%
+        height: 100px
+        @include centrar()
+        p
+            font-family: 'OpenSans-R'
+            font-size: 18px
+            text-align: center
