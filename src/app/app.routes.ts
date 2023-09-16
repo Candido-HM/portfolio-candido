@@ -7,11 +7,11 @@ import { ExperienceComponent } from "./components/main/experience/experience.com
 import { ContactComponent } from "./components/main/contact/contact.component";
 
 const routes: Routes = [
-    {path: '', component: HomeComponent},
     {path: 'home', component: HomeComponent},
     {path: 'formacion', component: FormationComponent},
     {path: 'experiencia', component: ExperienceComponent},
     {path: 'contacto', component: ContactComponent},
+    {path: '', pathMatch: 'full', redirectTo: 'home'},
     {path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
 
