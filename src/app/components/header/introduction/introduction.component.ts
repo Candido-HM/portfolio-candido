@@ -15,5 +15,5 @@ export class IntroductionComponent {
     this.name = '¡Hola! Soy Candido Hernandez Martin';
     this.occupation = 'Ingeniero en Informática';
   }
-
+  
 }

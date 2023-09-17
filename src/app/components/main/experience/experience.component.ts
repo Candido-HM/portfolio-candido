@@ -21,6 +21,7 @@ export class ExperienceComponent implements OnInit {
 
   ngOnInit(): void {
     this.getProjects();
+    window.scrollTo(0, 0);
   }
 
   getProjects(){
