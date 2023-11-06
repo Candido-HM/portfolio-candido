@@ -17,9 +17,9 @@
                 </p>
                 <ul class="list-responsabilidades">
                     <li>Responsabilidades:</li>
-                    <li>Actualización y agregado de módulos al sistema.</li>
+                    <li> Actualización del sistema web con HTML 5, Bootstrap, JQuery, librería de datatables, PHP y SQL Server</li>
                     <li>Creación de formatos PDF con la libreria HMTL2PDF.</li>
-                    <li>Actualización de la página oficial de la empresa utilizando el sistema de gestión de contenidos WordPress.</li>
+                    <li>Actualización de la pagina oficial con el sistema de gestión de contenido WordPress y plugins: Elementor, Slider Revolution y Contact Form.</li>
                 </ul>
             </section>
         </section>
@@ -39,6 +39,14 @@
                 <h3>{{ project.name }}</h3>
                 <p>{{ project.description }}</p>
                 <span>{{ project.stack }}</span>
+                <div class="container-links">
+                    <a [href]="project.repositorio" target="_blank">
+                        <img width="50px" src="../../../../assets/img/icon-github.svg" alt="repositorio">
+                    </a>
+                    <a [href]="project.deploy" target="_blank">
+                        <img width="50px" src="../../../../assets/img/icon-view.svg" alt="deploy">
+                    </a>
+                </div>
             </section> 
         </section>
     </section>
