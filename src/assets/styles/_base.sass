@@ -413,20 +413,65 @@ main
                 margin-bottom: 20px 
                 overflow: hidden
                 @include style-borde
-                @include centrar-col
+                @include centrar-col()
                 .img-project
-                    width: 100%
+                    width: 100% 
                     min-height: 160px
                     max-height: 280px
+                    @include centrar()
+                    padding: 10px !important
                     img
-                        border-radius: 20px 20px 0px 0px
+                        border-radius: 20px 20px 20px 20px
                         width: 100%
-                        height: 100%
+                        height: 100% 
+                        padding: 10px 10px 10px 10px
 
     /***********************************Componente Contacto *************************************/
     .title-contact
+        width: 100%
+        height: auto
+        @include centrar-col
+        margin-top: 10px
         h2
             @include title-section()
+        span 
+            margin-top: 10px
+            padding: 15px
+            text-align: center
+            font-family: 'OpenSans-SB', Arial, sans-serif
+            font-size: 18px
+    .contacto-article
+        width: 100%
+        height: auto
+        margin-top: 50px
+        @include centrar-col()
+        .contact-container
+            width: 90%
+            height: auto
+            .link-linkedin
+                width: 100%
+                height: 100px
+                @include centrar()
+                @include style-borde()
+                border-radius: 10px
+                margin-bottom: 50px !important
+                a
+                    text-decoration: none
+                    img
+                        width: 50px
+                        margin: 0px 20px 0px 0px
+            .link-email
+                width: 100%
+                height: 100px
+                @include centrar()
+                @include style-borde()
+                border-radius: 10px
+                margin-bottom: 50px
+                a
+                    text-decoration: none
+                    img
+                        width: 50px
+                        margin: 0px 20px 0px 0px
 
 /*********************************** FOOTER *************************************/
 footer
