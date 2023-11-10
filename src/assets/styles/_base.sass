@@ -448,38 +448,64 @@ main
         .contact-container
             width: 90%
             height: auto
+            @include centrar()
+            flex-direction: column
             .link-linkedin
                 width: 100%
                 height: 100px
+                max-width: 500px
                 display: flex
                 align-items: center
                 @include style-borde()
                 border-radius: 10px
                 margin-bottom: 50px !important
                 a
+                    width: 100%
                     font-family: "OpenSans-B", Arial, sans-serif
                     font-size: 20px
-                    margin-left: 50px
                     text-decoration: none
+                    display: flex
+                    align-items: center
+                    transition: all 200ms
                     img
+                        margin-left: 30px !important
                         width: 50px
                         margin: 0px 20px 0px 0px
+                        transition: all 200ms
+            .link-linkedin:hover
+                cursor: pointer
+                a
+                    color: #2983FF !important
+                    img 
+                        filter: invert(0.4) sepia(1) hue-rotate(190deg) saturate(1000%) !important
             .link-email
                 width: 100%
                 height: 100px
+                max-width: 500px
                 display: flex
                 align-items: center
                 @include style-borde()
                 border-radius: 10px
                 margin-bottom: 50px
                 a
+                    width: 100%
                     font-family: "OpenSans-B", Arial, sans-serif
                     font-size: 20px
-                    margin-left: 50px
                     text-decoration: none
+                    display: flex
+                    align-items: center
+                    transition: all 200ms
                     img
+                        margin-left: 30px !important
                         width: 50px
                         margin: 0px 20px 0px 0px
+                        transition: all 200ms
+            .link-email:hover
+                cursor: pointer
+                a
+                    color: #2983FF !important
+                    img 
+                        filter: invert(0.4) sepia(1) hue-rotate(190deg) saturate(1000%) !important
 
 /*********************************** FOOTER *************************************/
 footer
