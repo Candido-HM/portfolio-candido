@@ -38,14 +38,18 @@
             <section class="description-project">
                 <h3>{{ project.name }}</h3>
                 <p>{{ project.description }}</p>
-                <span>{{ project.stack }}</span>
+                <span class="stack" *ngFor="let stack of project.stacks">{{ stack }}</span>
                 <div class="container-links">
-                    <a [href]="project.repositorio" target="_blank">
-                        <img width="50px" src="../../../../assets/img/icon-github.svg" alt="repositorio">
-                    </a>
-                    <a [href]="project.deploy" target="_blank">
-                        <img width="50px" src="../../../../assets/img/icon-view.svg" alt="deploy">
-                    </a>
+                    <div class="link">
+                        <a [href]="project.repositorio" target="_blank">
+                            <img width="50px" src="../../../../assets/img/icon-github.svg" alt="repositorio">
+                        </a>
+                    </div>
+                    <div class="link">
+                        <a [href]="project.deploy" target="_blank">
+                            <img width="50px" src="../../../../assets/img/icon-view.svg" alt="deploy">
+                        </a>
+                    </div>
                 </div>
             </section> 
         </section>

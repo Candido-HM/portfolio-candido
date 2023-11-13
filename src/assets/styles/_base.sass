@@ -397,6 +397,7 @@ main
         h2
             @include title-section()
     .projects-article
+        width: auto
         height: auto
         @include centrar-col()
         margin-bottom: 50px
@@ -407,24 +408,50 @@ main
             flex-wrap: wrap
             justify-content: center
             .proyecto
-                width: 100%
+                width: calc( 100% - 15px )
                 max-width: 450px
-                height: 300px
+                height: auto
                 margin-bottom: 20px 
                 overflow: hidden
+                padding: 10px
                 @include style-borde
                 @include centrar-col()
                 .img-project
                     width: 100% 
-                    min-height: 160px
-                    max-height: 280px
+                    height: auto
+                    border-radius: 15px 15px 15px 15px
+                    overflow: hidden
+                    margin-bottom: 20px
                     @include centrar()
-                    padding: 10px !important
                     img
-                        border-radius: 20px 20px 20px 20px
+                        
                         width: 100%
-                        height: 100% 
-                        padding: 10px 10px 10px 10px
+                        height: auto 
+                .description-project
+                    width: 100%
+                    h3
+                        text-align: center
+                        font-family: "OpenSans-B", Arial, sans-serif
+                        font-size: 20px
+                        margin-bottom: 15px
+                    p
+                        font-family: "OpenSans-R", Arial, sans-serif
+                        text-align: center
+                        font-size: 16px
+                        margin-bottom: 20px
+                    .stack
+                        margin-right: 15px
+                        padding: 5px
+                        background: blue !important
+                        font-family: "OpenSans-SB", Arial, sans-serif
+                    .container-links
+                        margin-top: 30px
+                        display: flex
+                        margin-bottom: 10px
+                        .link
+                            width: 50%
+                            height: 100%
+                            @include centrar()
 
     /***********************************Componente Contacto *************************************/
     .title-contact
@@ -516,6 +543,6 @@ footer
         height: 100px
         @include centrar()
         p
-            font-family: 'OpenSans-R'
+            font-family: 'OpenSans-R', Arial, sans-serif
             font-size: 18px
             text-align: center
