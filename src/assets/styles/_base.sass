@@ -113,11 +113,13 @@ header
     
     // .container-navbar
     .navbar
-        width: 100%
+        width: auto
         height: 10%
+        border-radius: 10px
+        // background: red !important
 
         ul
-            width: inherit
+            width: 100%
             height: 100%
             display: flex
             margin: 0px auto
@@ -142,7 +144,6 @@ header
             
             .active
                     border-radius: 10px
-                    // border-bottom: 1px solid #2577FF
                     border-top: 1px solid #2577FF
                     box-shadow: 0px 3px 3px 0px #2577FF inset
 
@@ -154,9 +155,9 @@ header
         top: 0 !important
         right: 0
         left: 0 !important
-        width: 100% !important
+        width: auto !important
         z-index: 999 !important
-        border-radius: 0px 0px 20px 20px !important
+        border-radius: 10px 10px 10px 10px !important
         overflow: hidden !important
         max-width: 1440px !important
         margin: 0px auto
@@ -435,12 +436,21 @@ main
                         text-align: center
                         font-size: 16px
                         margin-bottom: 20px
-                    .stack
-                        margin-right: 15px
-                        padding: 10px
-                        font-family: "OpenSans-SB", Arial, sans-serif
+                    .stacks
+                        width: 100%
+                        height: auto
+                        display: flex
+                        flex-wrap: wrap
+                        justify-content: space-between
+                        .stack
+                            width: calc( 33.33% - 25px )
+                            border-radius: 10px
+                            padding: 5px
+                            margin-bottom: 10px
+                            text-align: center
+                            font-family: "OpenSans-SB", Arial, sans-serif
                     .container-links
-                        margin-top: 30px
+                        margin-top: 20px
                         display: flex
                         margin-bottom: 10px
                         .link

@@ -38,7 +38,12 @@
             <section class="description-project">
                 <h3>{{ project.name }}</h3>
                 <p>{{ project.description }}</p>
-                <span class="stack" *ngFor="let stack of project.stacks">{{ stack }}</span>
+                <div class="stacks">
+                    <div class="stack" *ngFor="let stack of project.stacks">
+                        <span>{{ stack }}</span>
+                    </div>
+                </div>
+                <!-- <span class="stack" *ngFor="let stack of project.stacks">{{ stack }}</span> -->
                 <div class="container-links">
                     <div class="link">
                         <a [href]="project.repositorio" target="_blank">
