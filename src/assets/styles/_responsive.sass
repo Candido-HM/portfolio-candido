@@ -2,6 +2,7 @@
 
 @media screen and (min-width: 640px) 
     header
+        height: 400px
         .introduction
             display: flex
             flex-direction: column
@@ -9,30 +10,25 @@
 
             .images
                 width: 90%
-                height: 88%
-                align-items: flex-start
+                height: 70%
                 .bg-information
+                    height: 60%
                     border-radius: 0px 0px 20px 20px
                     background-size: 100% 100%
-                .img-user
-                    margin-left: 30px
+                    margin-bottom: -100px
             
             .info-user
                 width: 90%
-                margin-top: -60px
+                height: 25%
                 z-index: 3
                 justify-content: flex-end
 
                 .text-user
-                    width: 60%
+                    width: 100%
                     h1
-                        text-align: left
+                        font-size: 35px
                     .occupation
-                        text-align: left
-                .theme
-                    width: 8%
-                    display: flex
-                    justify-content: flex-end
+                        font-size: 25px
         .navbar
             ul
                 li
@@ -44,11 +40,12 @@
                         span
                             display: block
                             font-family: 'OpenSans-SB'
-                            margin-left: 10px
+                            margin-left: 7px
                             font-size: 18px
                 .active
                     span
                         color: #2577FF !important
+                        
     main
         /********************************** Componente Home ************************************/
         .presentation
@@ -169,22 +166,23 @@ footer
 
 @media screen and (min-width: 900px) 
     header
+        height: 450px
         .introduction
             .images
                 width: 80%
-                height: 100%
+                height: 65%
+                align-items: flex-start
                 .bg-information
-                    height: 80%
-                    margin-bottom: -100px
-                    background-size: 103% 115%
+                    height: 70%
+                    margin-bottom: -130px
+                    background-size: 110% 180%
                 .img-user
-                    width: 140px
-                    height: 140px
-                    margin-left: 50px
+                    margin-left: 30px
 
             .info-user
                 width: 80%
-                margin-top: -50px
+                height: 35%
+                margin-top: -75px
         
         .navbar
             ul
