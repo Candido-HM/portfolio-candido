@@ -66,7 +66,7 @@
                     p
                         font-size: 18px
                         padding: 15px
-        .skills-article
+        .skills-section
             .skills-container
                 max-width: none
                 justify-content: flex-start
@@ -193,16 +193,15 @@ footer
             .presentation-container
                 width: 80%
                 .avatar-container
-                    width: 45%
+                    padding-left: 15px
                     img
-                        width: 330px
-                        height: 330px
+                        width: 300px
+                        height: 300px
                 .text-presentation
-                    width: 55%
+                    padding-right: 15px
                     p
                         font-size: 20px
-                        padding: 20px
-        .skills-article
+        .skills-section
             .skills-container
                 width: 80%
                 .item
@@ -251,6 +250,24 @@ footer
 
 @media screen and (min-width: 1100px) 
     main
+        /********************************** Componente Home ************************************/
+        .presentation
+            .presentation-container
+
+                .avatar-container
+                    width: auto
+                    display: block
+                    padding-left: 35px
+                    img
+                        width: 320px
+                        height: 320px
+                .text-presentation
+                    width: auto
+                    padding-left: 10px
+                    padding-right: 35px
+                    p
+                        padding: 0px
+
         .projects-article
             .project-container
                 width: 80%

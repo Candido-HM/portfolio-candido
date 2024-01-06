@@ -216,7 +216,7 @@ main
         margin-bottom: 50px
         h2
             @include title-section()
-    .skills-article
+    .skills-section
         height: auto
         margin-top: 50px
         @include centrar-col()
@@ -234,14 +234,15 @@ main
             justify-content: center
             .item
                 width: calc( 50% - 20px )
-                height: auto
+                height: 120px
                 padding: 10px
                 @include centrar-col()
 
                 img 
-                    width: 60px
-                    height: 60px
-                    transition: all 500ms
+                    width: 57px
+                    height: 45px
+                    transition: all 600ms
+                    margin-bottom: 5px
                 span
                     width: auto
                     padding: 5px 15px 5px 15px
@@ -253,7 +254,7 @@ main
                     transition: all 300ms
             .item:hover
                 img
-                    transform: scale(1.2, 1.2)
+                    transform: scale(1.1, 1.1)
                 span
                     animation-name: desplazamiento
                     animation-duration: 0.5s

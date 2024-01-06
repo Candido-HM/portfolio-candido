@@ -12,7 +12,7 @@ export class IntroductionComponent {
   public occupation: string;
 
   constructor(){
-    this.name = '¡Hola! Soy Candido Hernandez';
+    this.name = '¡Hola! Soy Cándido Hernández';
     this.occupation = 'Ingeniero en Informática';
   }
   
