@@ -30,7 +30,7 @@ $img-user: url('/assets/img/img-user.webp')
 @mixin style-borde()
     border-radius: 20px 20px 20px 20px
     border-top: 1px solid #188FF5 !important
-    box-shadow: 0px -1px 0px 0px #A2FBF9,0px 1px 0px 0px #89CFD1 inset
+    // box-shadow: 0px 1px 0px 0px #188FF5 inset 
 
 @mixin centrar()
     display: flex
@@ -432,7 +432,7 @@ main
         margin-bottom: 50px
         h2
             @include title-section()
-    .projects-article
+    .projects-section
         width: auto
         height: auto
         @include centrar-col()
@@ -466,15 +466,14 @@ main
                 .description-project
                     width: 100%
                     h3
-                        text-align: center
                         font-family: "OpenSans-B", Arial, sans-serif
                         font-size: 20px
                         margin-bottom: 15px
                     p
                         font-family: "OpenSans-R", Arial, sans-serif
-                        text-align: center
-                        font-size: 16px
+                        font-size: 15px
                         margin-bottom: 20px
+                        opacity: .9
                     .stacks
                         width: 100%
                         height: auto
@@ -488,14 +487,24 @@ main
                             margin-bottom: 10px
                             text-align: center
                             font-family: "OpenSans-SB", Arial, sans-serif
+                            font-size: 12px
+                            opacity: .8
                     .container-links
-                        margin-top: 20px
+                        margin-top: 10px
                         display: flex
                         margin-bottom: 10px
+                        padding-top: 15px
+                        
                         .link
                             width: 50%
                             height: 100%
-                            @include centrar()
+                            a
+                                width: 99%
+                                @include centrar()
+                            a:hover
+                                img
+                                    filter: invert(0.4) sepia(1) hue-rotate(190deg) saturate(1000%) !important
+
 
     /***********************************Componente Contacto *************************************/
     .title-contact

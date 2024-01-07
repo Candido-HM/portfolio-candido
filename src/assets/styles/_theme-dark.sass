@@ -4,6 +4,7 @@
 @mixin section-dark()
     background-color: #242526
     border: 1px solid #18191A
+    box-shadow: 0px 0px 15px 3px #181B1D inset 
 
 
 body.dark
@@ -61,16 +62,20 @@ body.dark
         .experience
             .corporativo-container
                 @include section-dark()
-        .projects-article
+        .projects-section
             .project-container
                 .proyecto
                     @include section-dark()
+                    .img-project
+                        box-shadow: 0px 0px 1px 1px #181B1D
                     .description-project
                         .stacks
                             .stack
                                 background-color: #181b1d
                         img
                             filter: invert(1)
+                        .container-links
+                            border-top: 2px solid #181b1d
 
         /***********************************Componente Contacto *************************************/
         .contacto-article

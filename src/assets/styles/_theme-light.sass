@@ -4,6 +4,7 @@
 @mixin section-light()
     background-color: #FFFFFF
     border: 1px solid #ccc
+    box-shadow: 0px 0px 15px 3px #CCCCCC inset
 
 
 body.light
@@ -59,14 +60,18 @@ body.light
         .experience
             .corporativo-container
                 @include section-light()
-        .projects-article
+        .projects-section
             .project-container
                 .proyecto
                     @include section-light()
+                    .img-project
+                        box-shadow: 0px 0px 1px 1px #CCCCCC
                     .description-project
                         .stacks
                             .stack
                                 background-color: #e0e5f5
+                        .container-links
+                            border-top: 2px solid #e0e5f5
 
         /***********************************Componente Contacto *************************************/
         .contacto-article

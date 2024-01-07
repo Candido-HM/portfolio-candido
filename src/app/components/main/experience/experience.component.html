@@ -51,13 +51,13 @@
 <section class="title-project">
     <h2>Proyectos</h2>
 </section>
-<article class="projects-article">
-    <section class="project-container">
-        <section *ngFor="let project of projects" class="proyecto">
+<section class="projects-section">
+    <article class="project-container">
+        <article *ngFor="let project of projects" class="proyecto">
             <figure class="img-project">
                 <img [src]="project.imagen" alt="captura"> 
             </figure>
-            <section class="description-project">
+            <article class="description-project">
                 <h3>{{ project.name }}</h3>
                 <p>{{ project.description }}</p>
                 <div class="stacks">
@@ -77,7 +77,7 @@
                         </a>
                     </div>
                 </div>
-            </section> 
-        </section>
-    </section>
-</article>
+            </article> 
+        </article>
+    </article>
+</section>
