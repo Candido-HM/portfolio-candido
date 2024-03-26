@@ -43,8 +43,8 @@ $img-user: url('/assets/img/img-user.webp')
     align-items: center
 
 @mixin img-calendar()
-    width: 25px
-    margin-right: 10px
+    width: 16px
+    margin-right: 5px
     
 
 *
@@ -294,24 +294,34 @@ main
                 @include centrar-col()
                 .title-itsz
                     width: 100%
-                    height: 60px
+                    height: auto
                     h3
                         @include title-section()
+                        margin-top: 15px
+                        padding-bottom: 10px
                         padding-left: 10px
                         padding-right: 10px
-                        font-size: 20px 
               
                 .description-itsz
                     width: 100%
                     margin-bottom: 20px
+                    .style-universidad
+                        text-align: center
+                        font-family: "OpenSans-SB", Arial, sans-serif
+                        font-size: 18px
+                    .date-itsz
+                        font-size: 14px
+                        opacity: 0.6
+                        .img-calendar
+                           @include img-calendar()
                     li
                         display: flex   
                         list-style: none
                         font-family: "OpenSans-SB", Arial, sans-serif
                         font-size: 18px
                         padding: 5px 15px 5px 15px 
-                        .img-calendar
-                            @include img-calendar()
+                        // .img-calendar
+                        //     @include img-calendar()
     .udemy-formation
         @include centrar-col()
         width: auto
@@ -337,7 +347,7 @@ main
                         @include title-section()
                         padding-left: 10px
                         padding-right: 10px
-                        font-size: 20px 
+                        font-size: 23px 
                 .description-udemy
                     width: 100%
                     height: auto
