@@ -41,11 +41,18 @@ $img-user: url('/assets/img/img-user.webp')
     display: flex
     flex-direction: column
     align-items: center
-
+    
 @mixin img-calendar()
     width: 16px
     margin-right: 5px
-    
+
+@mixin style-check()
+    width: 25px
+    height: 25px
+    margin-right: 5px
+    .icon-check
+        width: 25px
+        height: 25px        
 
 *
     margin: 0px
@@ -314,14 +321,27 @@ main
                         opacity: 0.6
                         .img-calendar
                            @include img-calendar()
-                    li
+                    .project-p
+                        margin-top: 15px
+                        margin-bottom: 15px
+                    .itsz-project
                         display: flex   
                         list-style: none
                         font-family: "OpenSans-SB", Arial, sans-serif
                         font-size: 18px
-                        padding: 5px 15px 5px 15px 
-                        // .img-calendar
-                        //     @include img-calendar()
+                        padding: 0px 10px 0px 10px
+                    .project-li
+                        font-family: "OpenSans-R", Arial, sans-serif
+                        font-size: 16px
+                        padding: 5px 15px 5px 10px
+                        list-style: none
+                        display: flex
+                        margin-bottom: 5px
+                        .container-check
+                            @include style-check()
+                            
+
+
     .udemy-formation
         @include centrar-col()
         width: auto
