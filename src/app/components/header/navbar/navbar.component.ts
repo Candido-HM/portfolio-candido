@@ -15,7 +15,7 @@ export class NavbarComponent {
     const scrollPosition = window.pageXOffset || document.documentElement.scrollTop || 0;
 
     // Si el scroll es mayor a cierta posición 
-    this.isFixedMenu = scrollPosition > 310;
+    this.isFixedMenu = scrollPosition > 0;
   }
 
 }
