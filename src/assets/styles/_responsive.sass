@@ -4,8 +4,12 @@
     header
         // height: 400px
         .navbar
+            display: flex
+            align-items: center
+            height: 70px
             ul
                 width: 90%
+                height: 50px
                 li
                     a
                         display: flex
@@ -20,6 +24,21 @@
                 .active
                     span
                         color: #2577FF !important
+        // Fijar el menu en la parte superior
+        .fixed-menu
+            position: fixed !important
+            top: 0 !important
+            right: 0
+            left: 0 !important
+            width: auto !important
+            z-index: 999 !important
+            border-radius: 10px 10px 10px 10px !important
+            overflow: hidden !important
+            max-width: 1440px !important
+            margin: 0px auto
+            height: 70px
+            transition: all 1000ms
+
         .introduction
             display: flex
             flex-direction: column
@@ -160,6 +179,10 @@ footer
 @media screen and (min-width: 900px) 
     header
         // height: 450px
+        .navbar
+            ul
+                width: 80%
+
         .introduction
             .images
                 width: 80%
@@ -173,9 +196,6 @@ footer
                 height: 35%
                 margin-top: -75px
         
-        .navbar
-            ul
-                width: 80%
     main
         /********************************** Componente Home ************************************/
         .presentation
