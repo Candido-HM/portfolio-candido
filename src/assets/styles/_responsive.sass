@@ -25,18 +25,9 @@
                         color: #2577FF !important
         // Fijar el menu en la parte superior
         .fixed-menu
-            position: fixed !important
-            top: 0 !important
-            right: 0
-            left: 0 !important
-            width: auto !important
-            z-index: 999 !important
             border-radius: 10px 10px 10px 10px !important
-            overflow: hidden !important
-            max-width: 1440px !important
-            margin: 0px auto
+        
             height: 70px
-            transition: all 1000ms
 
         .introduction
             display: flex
@@ -177,23 +168,25 @@ footer
 
 @media screen and (min-width: 900px) 
     header
-        // height: 450px
         .navbar
             ul
                 width: 80%
 
-        .introduction
-            .images
-                width: 80%
-                height: 65%
-                align-items: flex-start
-                .img-user
-                    margin-left: 30px
+        .ng-introduction
+            display: flex 
+            justify-content: center
 
-            .info-user
+            .introduction
                 width: 80%
-                height: 35%
-                margin-top: -75px
+                flex-direction: row
+                .images
+                    width: 35%
+                    align-items: flex-start
+                    .img-user
+                        margin-left: 30px
+
+                .info-user
+                    width: 65%
         
     main
         /********************************** Componente Home ************************************/
