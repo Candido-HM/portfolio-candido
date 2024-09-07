@@ -32,8 +32,8 @@ export class ExperienceComponent implements OnInit {
         }
       },
       error => {
-        console.log(<any>error);
-        console.log(this._projectService);
+        // console.log(<any>error);
+        // console.log(this._projectService);
       }
     );
   }
